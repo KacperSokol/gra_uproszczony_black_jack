@@ -200,9 +200,6 @@ if opcja==1:
                     screen.addstr(22, 10, "Suma moja: " + str(sumaMoja) + " ")
                 elif przycisk==ord("s"):
                     flagaMoja=True
-                elif not flagaMoja:
-                    screen.addstr(0, 0, "")
-                    przycisk = screen.getch()
             if decyduj(sumaPrzeciwnika):
                 kartyPrzeciwnika=karty[0]
                 karta=karty[0]
@@ -234,7 +231,6 @@ if opcja==1:
             else:
                 wynik=0
         screen.refresh()
-        #screen.addstr(12,10,"Wynik: "+wynik)
         if wynik==1:
             rysujWygrana()
         elif wynik==-1:
@@ -324,7 +320,6 @@ if opcja==2:
             else:
                 wynik=0
         screen.refresh()
-        #screen.addstr(12,10,"Wynik: "+wynik)
         if wynik==1:
             rysujWygrana1()
         elif wynik==-1:
